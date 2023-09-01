@@ -137,4 +137,156 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: montserrat, sans-serif;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body {
+  font-family: Montserrat, sans-serif;
+  transition: 0.3s;
+}
+
+.wrapper {
+  max-width: 1600px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services {
+  position: relative;
+  background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0px 0px 12px 12px;
+}
+
+.services::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #CACADB;
+  height: 10px;
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-radius: 0px 0px 12px 12px;
+  background-color: #E7E7F2;
+  height: 10px;
+}
+
+.link-services {
+  display: flex;
+  align-items: center;
+  width: 94px;
+}
+.link-services--h3-caps {
+  color: #24A3FF;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.link-services::after {
+  content: url(../images/Arrow.svg);
+  margin-left: 2px;
+}
+
+.link-services:hover::after {
+  content: url(../images/ArrowRed.svg);
+  margin-left: 2px;
+}
+
+.link-services:hover .link-services--h3-caps {
+  color: #F0145A;
+}
+
+.hero {
+  margin-top: 10px;
+  font-size: 38px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wrap-for-services-img {
+  display: inline-block;
+  border-radius: 24px;
+  background: #FFF;
+  margin-bottom: 30px;
+}
+.wrap-for-services-img img {
+  width: 64px;
+  height: 64px;
+  padding: 15px;
+}
+
+.blocks {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.block {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.h3-regular {
+  color: #0085FF;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.paragraph-regular {
+  color: #FFF;
+  line-height: 26px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .block {
+    width: 45%;
+  }
+  .blocks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .block {
+    width: 28%;
+  }
+}
+@media (min-width: 1440px) {
+  .block {
+    width: 30.3%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,138 @@
+@use 'reset' as *;
+@use 'mixins' as mix;
+@use 'variables' as var;
+@use 'functions' as func;
+@use 'general' as *;
+
+.body {
+    font-family: Montserrat, sans-serif;
+    transition: .3s;
+}
+
+.wrapper {
+    max-width: 1600px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services {
+    position: relative;
+    background: var.$gradient-supersoft;
+    border-radius: 0px 0px 12px 12px;      
+}
+
+.services::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin-right:20px ;
+    margin-left: 20px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #CACADB;
+    height: 10px;
+ }
+
+ .services::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #E7E7F2;
+    height: 10px;
+ }
+
+.link-services {
+    display: flex;
+    align-items: center;
+    width: 94px;
+
+    &--h3-caps {
+        @include mix.h3-caps;
+    }
+}
+
+.link-services::after {
+    content: url(../images/Arrow.svg);
+    margin-left: 2px;   
+}
+
+.link-services:hover::after {
+    content: url(../images/ArrowRed.svg);
+    margin-left: 2px;
+}
+
+.link-services:hover .link-services--h3-caps {
+    color: var.$accent; 
+}
+
+.hero {
+    margin-top: 10px;
+    @include mix.hero;
+}
+
+.wrap-for-services-img {
+    display: inline-block;
+    border-radius: 24px;
+    background:  #FFF;
+    margin-bottom: 30px;
+    img {
+        width: 64px;
+        height: 64px;
+        padding: 15px;
+    }
+}
+
+.blocks {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.block {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.h3-regular {
+    @include mix.h3-regular;
+    margin-bottom: 15px;
+}
+
+.paragraph-regular {
+    @include mix.paragraph-regular;
+}
+@media( min-width: 768px ) {
+    .wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .block {
+       width: 45%;
+    }
+    .blocks {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        gap:60px;     
+    }
+}
+
+@media (min-width: 1024px) {
+    .block{
+        width: 28%;
+    }
+}
+
+@media (min-width:1440px) {
+    .block {
+        width: 30.3%;
+    }
+}
