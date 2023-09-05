@@ -4,11 +4,6 @@
 @use 'functions' as func;
 @use 'general' as *;
 
-.body {
-    font-family: Montserrat, sans-serif;
-    transition: .3s;
-}
-
 .wrapper {
     max-width: 1600px;
     padding-left: 30px;
@@ -96,8 +91,8 @@
 }
 
 .block {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .h3-regular {
@@ -127,12 +122,202 @@
 
 @media (min-width: 1024px) {
     .block{
-        width: 28%;
+        width: 28.9%;
     }
 }
 
 @media (min-width:1440px) {
     .block {
         width: 30.3%;
+    }
+}
+
+.spacer {
+    height: 60px;
+}
+
+.h3-caps {
+    @include mix.h3-caps;
+    color: var.$main-regular;
+    margin-bottom: 30px;
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .logos a:nth-child(n + 7) {
+            display: none;
+        }
+}
+
+.hillel {
+    background-color: #1C4280;
+    @include mix.flex-partners;
+    &-img {
+        width: 217px;
+        height: 48px;
+    }
+}
+
+.wannabiz {
+    @include mix.flex-partners;
+    background-color: #143646;
+
+    &-img {
+        width: 199px;
+        height: 32px;
+    }
+
+}
+
+.tapgerine {
+    @include mix.flex-partners;
+    background-color: #FD9339; 
+
+    &-img {
+        width: 179px;
+        height: 44px;
+    }
+}
+
+.dlook {
+    @include mix.flex-partners;
+    background-color: #9E4DC3;
+
+    &-img {
+        width: 180px;
+        height: 42px;
+    }
+}
+
+.orangear {
+    @include mix.flex-partners;
+    background-color: #FD9339;
+
+    &-img {
+        width: 174px;
+        height: 44px;
+    }
+}
+
+.adtelligent {
+    @include mix.flex-partners;
+    background-color: #E2E2E4;
+
+    &-img {
+        width: 195px;
+        height: 48px;
+    }
+}
+
+.clickky {
+    @include mix.flex-partners;
+    background-color: #C71C36;
+
+    &-img {
+        width: 138px;
+        height: 61px
+    }
+}
+
+.eco-leasing {
+    @include mix.flex-partners;
+    background-color: #DCF3F9;
+
+    &-img {
+        width: 146px;
+        height: 76px;
+    }
+}
+
+.ingratek {
+    @include mix.flex-partners;
+    background-color: #DCF3F9;
+
+    &-img {
+        width: 182px;
+        height: 60px;
+    }
+}
+
+.city-par {
+    @include mix.flex-partners;
+    background-color: #282240;
+
+    &-img {
+        width: 181px;
+        height: 38px;
+    }
+}
+
+.artprint {
+    @include mix.flex-partners;
+    background-color: #1D4568;
+
+    &-img {
+        width: 189px;
+        height: 46px;
+    }
+}
+
+.ultimatecard {
+    @include mix.flex-partners;
+    background-color: #000;
+
+    &-img {
+        width: 152px;
+        height: 95px;
+    }
+}
+
+@media (min-width: 768px) {
+    .logos {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            width: 33.3%;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .logos {
+        a {
+            width: 25%;
+        }
+    }
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    .block {
+        width: 30.8%;
+    }
+
+    .logos {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .hillel {
+        border-top-left-radius: 12px;
+    }
+
+    .dlook {
+        border-top-right-radius: 12px;
+    }
+
+    .ingratek {
+        border-bottom-left-radius: 12px;
+    }
+
+    .ultimatecard {
+        border-bottom-right-radius: 12px;
     }
 }

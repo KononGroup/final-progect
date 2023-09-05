@@ -27,3 +27,10 @@
     color: #FFF;
     line-height: 26px;
 }
+
+@mixin flex-partners {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
