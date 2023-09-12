@@ -1,0 +1,61 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+
+.slider {
+    &__wrapper-info {
+        &--hero {
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__wrapper {
+        padding: 30px;
+        background-color: #EDEDF7;
+        margin-bottom: 30px;
+    }
+}
+
+.contact {
+    &-name {
+        color: #B3B3BA;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    &-job-title {
+        color: #B3B3BA;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+.dots-navigation {
+    display: flex;
+    justify-content: center;
+
+    &__button {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: none;
+        opacity: 0.2;
+        background-color: #24A3FF;
+
+        &:nth-child(2) {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        &--active {
+            opacity: 1;
+        }
+    }
+
+}
+
+.slider__picture {
+    display: block;
+    font-size: 0;
+}

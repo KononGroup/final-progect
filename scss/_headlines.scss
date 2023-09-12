@@ -1,0 +1,33 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+
+.hero {
+    margin-top: 10px;
+    @include mix.hero;
+}
+
+.h3-regular {
+    @include mix.h3-regular;
+    margin-bottom: 15px;
+}
+
+.paragraph-regular {
+    @include mix.paragraph-regular;
+}
+
+.h3-caps {
+    @include mix.h3-caps;
+    color: var.$main-regular;
+    margin-bottom: 30px;
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.h4-regular {
+    @include mix.h4-regular;
+}
+
+.paragraph-small {
+    @include mix.paragraph-small;
+}
