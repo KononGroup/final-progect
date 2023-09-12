@@ -20,9 +20,21 @@
     .hero {
         font-size: 30px;
     }
+
+       
+}
+
+@media(max-width: 1024px){
+    .slider {
+        &__wrapper {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 @media( min-width: 768px ) {
+
+
     .wrapper {
         padding-left: 60px;
         padding-right: 60px;
@@ -65,7 +77,6 @@
             flex-direction: column;
             justify-content: space-between;
             gap: 30px;
-            margin-bottom: 0;
         }
     }
 

@@ -12,7 +12,7 @@
     &__wrapper {
         padding: 30px;
         background-color: #EDEDF7;
-        margin-bottom: 30px;
+        
     }
 }
 
@@ -58,4 +58,8 @@
 .slider__picture {
     display: block;
     font-size: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
 }
