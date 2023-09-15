@@ -280,6 +280,70 @@
             width: 33.3%;
         }
     }
+
+    .footer {
+        
+        &__content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            &--address {
+                display: flex;
+            }
+
+            &--street{
+                display: flex;
+                align-items: center;
+            }
+
+            &--law {
+                display: flex;
+                justify-content: end;
+            }
+
+            &--street::after {
+                content: '';
+                border-radius: 50%;
+                width: 6px;
+                height: 6px;
+                background-color: #B3B3BA;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            &--contact {
+                display: flex;
+                align-items: center;
+                grid-column: 1 / 3;
+                grid-row: 2 /3;
+            }
+
+            &--number {
+                display: flex;
+                align-items: center;
+            }
+
+            &--number::before {
+                content: '';
+                border-radius: 50%;
+                width: 6px;
+                height: 6px;
+                background-color: #B3B3BA;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            &--number::after {
+                content: '';
+                border-radius: 50%;
+                width: 6px;
+                height: 6px;
+                background-color: #B3B3BA;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
 }
 
 @media (min-width: 1024px) {

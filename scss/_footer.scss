@@ -1,0 +1,54 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+@use 'functions' as func;
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__hr {
+        height: 2px;
+        background-color: #E6E6F0;
+        margin-top: 0;
+        margin-bottom: 30px;
+        border: none;
+    }
+
+    &__content{
+        text-align: center;
+
+        &--link {
+            @include mix.h3-caps;
+        }
+
+        &--number {
+            color: var.$main-alt;
+            font-weight: 700;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        &--email {
+            color: var.$active-regular;
+            font-weight: 700;
+        }
+
+        &--law {
+            color: #B3B3BA;
+        }
+
+        &--street {
+            color: var.$main-regular;
+            margin-bottom: 10px;
+        }
+
+        &--contact {
+            margin-bottom: 30px;
+        }
+
+        &--address {
+            margin-bottom: 20px;
+        }
+       
+    }
+}
