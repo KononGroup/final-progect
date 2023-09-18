@@ -1,0 +1,81 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+
+.services {
+    position: relative;
+    background: var.$gradient-supersoft;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.services::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #CACADB;
+    height: 10px;
+}
+
+.services::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #E7E7F2;
+    height: 10px;
+}
+
+.link-services {
+    display: flex;
+    width: 94px;
+
+    &--h3-caps {
+        @include mix.h3-caps;
+    }
+}
+
+.link-services::after {
+    content: url(../images/Arrow.svg);
+    margin-left: 2px;
+}
+
+.link-services:hover::after {
+    content: url(../images/ArrowRed.svg);
+    margin-left: 2px;
+}
+
+.link-services:hover .link-services--h3-caps {
+    color: var.$accent;
+}
+
+
+.wrap-for-services-img {
+    display: inline-block;
+    border-radius: 24px;
+    background: #FFF;
+    margin-bottom: 30px;
+
+    img {
+        width: 64px;
+        height: 64px;
+        padding: 15px;
+    }
+}
+
+.blocks {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}

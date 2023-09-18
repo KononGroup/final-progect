@@ -1,0 +1,50 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+
+.publications {
+    padding-top: 30px;
+    background-color:  #F5F5FA;
+
+    &__cards--img {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__info {
+        padding: 30px;
+
+    }
+
+    &__cards--item {
+        margin-top: 30px;
+        background-color: #fff;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    &__cards--title{
+        margin-bottom: 15px;
+    }
+
+    &__cards--date {
+        margin-bottom: 15px;
+        color:  #B3B3BA;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__card--dividing-strip {
+        margin-top: 0;
+        margin-bottom: 15px;
+        background: #E6E6F0;
+        height: 4px;
+        border: none;
+    }
+
+   
+}

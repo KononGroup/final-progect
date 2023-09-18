@@ -1,0 +1,127 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+
+.partners {
+    padding-bottom: 60px;
+}
+
+.hillel {
+    background-color: #1C4280;
+    @include mix.flex-partners;
+
+    &-img {
+        width: 217px;
+        height: 48px;
+    }
+}
+
+.wannabiz {
+    @include mix.flex-partners;
+    background-color: #143646;
+
+    &-img {
+        width: 199px;
+        height: 32px;
+    }
+
+}
+
+.tapgerine {
+    @include mix.flex-partners;
+    background-color: #FD9339;
+
+    &-img {
+        width: 179px;
+        height: 44px;
+    }
+}
+
+.dlook {
+    @include mix.flex-partners;
+    background-color: #9E4DC3;
+
+    &-img {
+        width: 180px;
+        height: 42px;
+    }
+}
+
+.orangear {
+    @include mix.flex-partners;
+    background-color: #FD9339;
+
+    &-img {
+        width: 174px;
+        height: 44px;
+    }
+}
+
+.adtelligent {
+    @include mix.flex-partners;
+    background-color: #E2E2E4;
+
+    &-img {
+        width: 195px;
+        height: 48px;
+    }
+}
+
+.clickky {
+    @include mix.flex-partners;
+    background-color: #C71C36;
+
+    &-img {
+        width: 138px;
+        height: 61px
+    }
+}
+
+.eco-leasing {
+    @include mix.flex-partners;
+    background-color: #DCF3F9;
+
+    &-img {
+        width: 146px;
+        height: 76px;
+    }
+}
+
+.ingratek {
+    @include mix.flex-partners;
+    background-color: #DCF3F9;
+
+    &-img {
+        width: 182px;
+        height: 60px;
+    }
+}
+
+.city-par {
+    @include mix.flex-partners;
+    background-color: #282240;
+
+    &-img {
+        width: 181px;
+        height: 38px;
+    }
+}
+
+.artprint {
+    @include mix.flex-partners;
+    background-color: #1D4568;
+
+    &-img {
+        width: 189px;
+        height: 46px;
+    }
+}
+
+.ultimatecard {
+    @include mix.flex-partners;
+    background-color: #000;
+
+    &-img {
+        width: 152px;
+        height: 95px;
+    }
+}
