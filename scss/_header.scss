@@ -1,0 +1,18 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+@use 'functions' as func;
+
+.header {
+    position: relative;
+    &__top-of-head {
+        position: absolute;
+        top: 0;
+        
+    }
+
+    &__content {
+        background-color: var.$main-regular;
+        position: relative;
+    
+    }
+}
