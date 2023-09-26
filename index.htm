@@ -10,36 +10,85 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <div class="header__top-of-head">
-                <div class="buttons-lng">
-                    <button>УК</button>
-                    <button>РУ</button>
-                    <button>EN</button>
+    <section class="header__content">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__container-color desktop-hidden">
                 </div>
-                <p>
-                    Kyiv, Mechnikova str. 14/1
-                </p>
-                <a href="tel:+0800211927">0800 211 927</a>
-                <img src="./images/logo/Facebook-Header.png" alt="">
-            </div>  
-            <div class="logo">
-                <img src="./images/logo/Name.png" alt="">
-                <img src="./images/logo/LAW-COMPANY.png" alt="">
+                <div class="header__top-of-head">
+                    <nav class="header__links-lng">
+                        <a class="header__links-lng--item " href="">УК</a>
+                        <a class="header__links-lng--item" href="">РУ</a>
+                        <a class="header__links-lng--item header__links-lng--item-active" href="">EN</a>
+                    </nav>
+                    <p class="header__top-of-head--address mobile-hidden ">
+                        Kyiv, Mechnikova str. 14/1
+                    </p>
+                    <a class="header__top-of-head--tel" href="tel:+0800211927">0800 211 927</a>
+                    <a href="">
+                        <svg class="header__fb-svg mobile-hidden" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_115896_2805)">
+                                <path
+                                    d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_115896_2805">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>  
+                <div class="header__middle">
+                    <picture>
+                        <source srcset="./images/header/Logo-min768.svg" media="(min-width: 768px)">
+                        <img src="./images/header/Logo.svg" alt="">
+                    </picture>
+                    <img class="header__middle--slash desktop-hidden" src="./images/header/Slash.svg" alt="">
+                    <p class="header__middle--services desktop-hidden">services</p>
+                </div>
+                <button class="header__button--nav desktop-hidden">
+                    <img src="./images/header/Hamburger.svg" alt="">
+                </button>
+                <nav class="header__nav mobile-hidden">
+                    <a class="header__nav--link" href="">about us</a>
+                    <a class="header__nav--link" href="">services</a>
+                    <a class="header__nav--link" href="">team</a>
+                    <a class="header__nav--link" href="">publications</a>
+                    <a class="header__nav--link" href="">contact</a>
+                </nav>
             </div>
-            <nav>
-                <a href="">about us</a>
-                <a href="">services</a>
-                <a href="">team</a>
-                <a href="">publications</a>
-                <a href="">contact</a>
-            </nav>
+        </header>
+        
+    </section>
+    <section class="hero-content">
+        <picture>
+            <source srcset="./images/hero/Symbol-1920.svg" media="(min-width: 1920px)">
+            <source srcset="./images/hero/Symbol-1440.svg" media="(min-width: 1440px)">
+            <source srcset="./images/hero/Symbol-1024.svg" media="(min-width: 1024px)">
+            <source srcset="./images/hero/Symbol-768.png" media="(min-width: 768px)">          
+            <img class="hero-content__img" src="./images/header/Symbol375.png" alt="">
+        </picture>
+        <div class="hero-content__container-text">
+            <p class="hero-content__text">
+                you legal solutions provide
+            </p>
         </div>
-        <section class="header__content">
-            <img src="./images/Symbol.png" alt="">
-        </section>
-    </header>
+        <button class="hero-content__button">
+            <svg class="hero-content__button--svg" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_22728_12366)">
+                    <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
+                    <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_22728_12366">
+                        <rect width="42" height="42" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
+    </section>
     <section class="services">
         <div class="wrapper">
             <div>
@@ -147,7 +196,7 @@
                     <source media="(min-width: 1024px)" srcset="./images/team-photos/image400w.png" />
                     <source media="(min-width: 768px)" srcset="./images/team-photos/image648w.png" />
             
-                    <img src="./images/team-photos/image315-w.png" alt="">
+                    <img class="slider__picture--img" src="./images/team-photos/image315-w.png" alt="">
                 </picture>
                 <div class="slider__wrapper">
                     <div class="slider__wrapper-info">
@@ -237,54 +286,52 @@
                 </h1>
             </div>
             <div class="publications__cards">
-                <div class="publications__cards--container ">
-                    <div class="publications__cards--item">
-                       <picture class="publications__cards--img">
-                        <source media="(min-width: 1920px)" width="" srcset="./images/publications-photo/Cover1desktop.png" />
-                        <source media="(min-width: 1440px)" srcset="./images/publications-photo/Cover1-1440.png" />
-                        <source media="(min-width: 1024px)" srcset="./images/publications-photo/Cover1-1024.png" />
-                        <source media="(min-width: 768px)"  srcset="./images/publications-photo/Cover1-768.png" />
+                <div class="publications__cards--item">
+                    <picture class="publications__cards--img">
+                    <source media="(min-width: 1920px)" width="" srcset="./images/publications-photo/Cover1desktop.png" />
+                    <source media="(min-width: 1440px)" srcset="./images/publications-photo/Cover1-1440.png" />
+                    <source media="(min-width: 1024px)" srcset="./images/publications-photo/Cover1-1024.png" />
+                    <source media="(min-width: 768px)"  srcset="./images/publications-photo/Cover1-768.png" />
 
 
-                        <img class="publications__cards--img" src="./images/publications-photo/Cover1.png" alt="">
-                       </picture>
-                        <div class="publications__info">
-                            <h4 class="publications__cards--title h4-regular">
-                                Equity associate
-                            </h4>
-                            <p class="publications__cards--date">
-                                April 22
-                            </p>
-                            <hr class="publications__card--dividing-strip">
-                            <p class="publications__cards--text paragraph-small">
-                                I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me
-                                that if I…
-                            </p>
-                        </div>
+                    <img class="publications__cards--img" src="./images/publications-photo/Cover1.png" alt="">
+                    </picture>
+                    <div class="publications__info">
+                        <h4 class="publications__cards--title h4-regular">
+                            Equity associate
+                        </h4>
+                        <p class="publications__cards--date">
+                            April 22
+                        </p>
+                        <hr class="publications__card--dividing-strip">
+                        <p class="publications__cards--text paragraph-small">
+                            I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me
+                            that if I…
+                        </p>
                     </div>
-                    <div class="publications__cards--item">
-                        <picture class="publications__cards--img">
-                            <source media="(min-width: 1920px)" srcset="./images/publications-photo/Cover2-desktop.png" />
-                            <source media="(min-width: 1440px)" srcset="./images/publications-photo/Cover2-1440.png" />
-                            <source media="(min-width: 1024px)" srcset="./images/publications-photo/Cover2-1024.png" />
-                            <source media="(min-width: 768px)" srcset="./images/publications-photo/Cover2-768.png" />
+                </div>
+                <div class="publications__cards--item">
+                    <picture class="publications__cards--img">
+                        <source media="(min-width: 1920px)" srcset="./images/publications-photo/Cover2-desktop.png" />
+                        <source media="(min-width: 1440px)" srcset="./images/publications-photo/Cover2-1440.png" />
+                        <source media="(min-width: 1024px)" srcset="./images/publications-photo/Cover2-1024.png" />
+                        <source media="(min-width: 768px)" srcset="./images/publications-photo/Cover2-768.png" />
 
-                            <img class="publications__cards--img" src="./images/publications-photo/Cover2.png" alt="">
-                        </picture>
-                        <div class="publications__info">
-                            <h4 class="publications__cards--title h4-regular">
-                                Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
-                            </h4>
-                            <p class="publications__cards--date">
-                                September 29
-                            </p>
-                            <hr class="publications__card--dividing-strip">
-                            <p class="publications__cards--text paragraph-small">
-                                And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21
-                                National
-                                Commission for Data Protection.
-                            </p>
-                        </div>
+                        <img class="publications__cards--img" src="./images/publications-photo/Cover2.png" alt="">
+                    </picture>
+                    <div class="publications__info">
+                        <h4 class="publications__cards--title h4-regular">
+                            Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR
+                        </h4>
+                        <p class="publications__cards--date">
+                            September 29
+                        </p>
+                        <hr class="publications__card--dividing-strip">
+                        <p class="publications__cards--text paragraph-small">
+                            And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21
+                            National
+                            Commission for Data Protection.
+                        </p>
                     </div>
                 </div>
                 <div class="publications__cards--item">
@@ -323,7 +370,20 @@
                     <a class="footer__content--link" href="">On map</a>
                 </div>
                 <div class="footer__content--contact">
-                    <img src="./images/logo/Facebook-Footer.png" alt="">
+                    <a href="#">
+                        <svg class="footer__fb-svg" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_22721_8205)">
+                                <path
+                                    d="M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z"
+                                    fill="#24A3FF" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_22721_8205">
+                                    <rect width="38" height="38" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
                     <div class="dot-separator"></div>
                     <p class="footer__content--number" >0800 211 927</p>
                     <div class="dot-separator"></div>
@@ -333,5 +393,20 @@
             </div>
         </div>
     </footer>
+    <div class="mobile-navigation mobile-navigation-close">
+        <nav class="mobile-navigation__container">
+            <button class="mobile-navigation__container--button" type="button">
+                <svg class="mobile-navigation__container--svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                    <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                </svg>
+            </button>
+            <a class="mobile-navigation__container--link mobile-navigation__container--link-current-page" href="">about us</a>
+            <a class="mobile-navigation__container--link" href="">послуги</a>
+            <a class="mobile-navigation__container--link" href="">контаки</a>
+            <a class="mobile-navigation__container--link" href="">публікації</a>
+            <a class="mobile-navigation__container--link" href="">команда</a>           
+        </nav>
+    </div>
 </body>
 </html>

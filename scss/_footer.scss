@@ -5,6 +5,7 @@
 .footer {
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: #F5F5FA;
 
     &__hr {
         height: 2px;
@@ -46,9 +47,17 @@
             margin-bottom: 30px;
         }
 
+        &--email:hover {
+            color: var.$accent;
+        }
+
         &--address {
             margin-bottom: 20px;
         }
        
+    }
+
+    &__fb-svg:hover path {
+        fill: var.$accent;
     }
 }
