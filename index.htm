@@ -10,181 +10,215 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="header__content">
-        <header class="header">
-            <div class="header__wrapper">
-                <div class="header__container-color desktop-hidden">
-                </div>
-                <div class="header__top-of-head">
-                    <nav class="header__links-lng">
-                        <a class="header__links-lng--item " href="">УК</a>
-                        <a class="header__links-lng--item" href="">РУ</a>
-                        <a class="header__links-lng--item header__links-lng--item-active" href="">EN</a>
+    <div class="wrap-bg-color">
+        <section class="header__content">
+            <header class="header">
+                <div class="header__wrapper">
+                    <div class="header__container-color desktop-hidden">
+                    </div>
+                    <div class="header__top-of-head">
+                        <nav class="header__links-lng">
+                            <a class="header__links-lng--item " href="">УК</a>
+                            <a class="header__links-lng--item" href="">РУ</a>
+                            <a class="header__links-lng--item header__links-lng--item-active" href="">EN</a>
+                        </nav>
+                        <p class="header__top-of-head--address mobile-hidden ">
+                            Kyiv, Mechnikova str. 14/1
+                        </p>
+                        <a class="header__top-of-head--tel" href="tel:+0800211927">0800 211 927</a>
+                        <a href="">
+                            <svg class="header__fb-svg mobile-hidden" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_115896_2805)">
+                                    <path
+                                        d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_115896_2805">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__middle">
+                        <picture>
+                            <source srcset="./images/header/Logo-min768.svg" media="(min-width: 768px)">
+                            <img src="./images/header/Logo.svg" alt="">
+                        </picture>
+                        <img class="header__middle--slash desktop-hidden" src="./images/header/Slash.svg" alt="">
+                        <p class="header__middle--services desktop-hidden">services</p>
+                    </div>
+                    <button class="header__button--nav desktop-hidden">
+                        <img src="./images/header/Hamburger.svg" alt="">
+                    </button>
+                    <nav class="header__nav mobile-hidden">
+                        <a class="header__nav--link" href="">about us</a>
+                        <a class="header__nav--link" href="">services</a>
+                        <a class="header__nav--link" href="">team</a>
+                        <a class="header__nav--link" href="">publications</a>
+                        <a class="header__nav--link" href="">contact</a>
                     </nav>
-                    <p class="header__top-of-head--address mobile-hidden ">
-                        Kyiv, Mechnikova str. 14/1
-                    </p>
-                    <a class="header__top-of-head--tel" href="tel:+0800211927">0800 211 927</a>
-                    <a href="">
-                        <svg class="header__fb-svg mobile-hidden" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_115896_2805)">
-                                <path
-                                    d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_115896_2805">
-                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                </div>  
-                <div class="header__middle">
-                    <picture>
-                        <source srcset="./images/header/Logo-min768.svg" media="(min-width: 768px)">
-                        <img src="./images/header/Logo.svg" alt="">
-                    </picture>
-                    <img class="header__middle--slash desktop-hidden" src="./images/header/Slash.svg" alt="">
-                    <p class="header__middle--services desktop-hidden">services</p>
                 </div>
-                <button class="header__button--nav desktop-hidden">
-                    <img src="./images/header/Hamburger.svg" alt="">
-                </button>
-                <nav class="header__nav mobile-hidden">
-                    <a class="header__nav--link" href="">about us</a>
-                    <a class="header__nav--link" href="">services</a>
-                    <a class="header__nav--link" href="">team</a>
-                    <a class="header__nav--link" href="">publications</a>
-                    <a class="header__nav--link" href="">contact</a>
-                </nav>
-            </div>
-        </header>
+            </header>
         
-    </section>
-    <section class="hero-content">
-        <picture>
-            <source srcset="./images/hero/Symbol-1920.svg" media="(min-width: 1920px)">
-            <source srcset="./images/hero/Symbol-1440.svg" media="(min-width: 1440px)">
-            <source srcset="./images/hero/Symbol-1024.svg" media="(min-width: 1024px)">
-            <source srcset="./images/hero/Symbol-768.png" media="(min-width: 768px)">          
-            <img class="hero-content__img" src="./images/header/Symbol375.png" alt="">
-        </picture>
-        <div class="hero-content__container-text">
-            <p class="hero-content__text">
-                you legal solutions provide
-            </p>
-        </div>
-        <button class="hero-content__button">
-            <svg class="hero-content__button--svg" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_22728_12366)">
-                    <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
-                    <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
-                </g>
-                <defs>
-                    <clipPath id="clip0_22728_12366">
-                        <rect width="42" height="42" fill="white" />
-                    </clipPath>
-                </defs>
-            </svg>
-        </button>
-    </section>
-    <section class="services">
-        <div class="wrapper">
-            <div>
-            <a class="link-services" href="#">
-                <h3 class="link-services--h3-caps">
-                    Services
-                </h3>
-            </a>
-            <h1 class="hero">
-                What can we do better than others?
-            </h1>
+        </section>
+        <section class="hero-content">
+            <picture>
+                <source srcset="./images/hero/Symbol-1920.svg" media="(min-width: 1920px)">
+                <source srcset="./images/hero/Symbol-1440.svg" media="(min-width: 1440px)">
+                <source srcset="./images/hero/Symbol-1024.svg" media="(min-width: 1024px)">
+                <source srcset="./images/hero/Symbol-768.png" media="(min-width: 768px)">
+                <img class="hero-content__img" src="./images/header/Symbol375.png" alt="">
+            </picture>
+            <div class="hero-content__container-text">
+                <p class="hero-content__text">
+                    you legal solutions provide
+                </p>
             </div>
-            <div class="blocks">
-                <div class="block">
-                    <div class="wrap-for-services-img">
-                        <img src="./images/servicesImg/Ecommerce.svg" alt="">
-                    </div>
-                    <h3 class="h3-regular">
-                        IT and e-commerce
+            <button class="hero-content__button">
+                <svg class="hero-content__button--svg" width="42" height="42" viewBox="0 0 42 42" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_22728_12366)">
+                        <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2" />
+                        <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_22728_12366">
+                            <rect width="42" height="42" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </section>
+        <section class="description">
+            <div class="wrapper description__wrapper">
+                <nav class="description__nav">
+                    <button class="description__nav--button  description__nav--button-active" href="">Consistent</button>
+                    <button class="description__nav--button hero-regular" href="">Customer oriented</button>
+                    <button class="description__nav--button hero-regular" href="">Innovative</button>
+                    <button class="description__nav--button hero-regular" href="">Business oriented</button>
+                </nav>
+                <hr class="description__hr">
+                <div class="description__content">
+                    <h3 class="description__content--title">
+                        We turn the idea of legal services
                     </h3>
-                    <p class="paragraph-regular">
-                        An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from
-                        doing
-                        business. But there is not much work to do to hire an in-house lawyer.
-                    </p>
-                </div>
-                <div class="block">
-                    <div class="wrap-for-services-img">
-                        <img src="./images/servicesImg/Support.svg" alt="">
-                    </div>
-                    <h3 class="h3-regular">
-                        Comprehensive daily
-                        legal support
-                    </h3>
-                    <p class="paragraph-regular">
-                        In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know
-                        very
-                        well how difficult it is to find a good candidate with experience in the field of information technology in
+                    <p class="description__content--text">
+                        Consolidating many years of experience and practice, the company's lawyers accompany complex projects
+                        and achieve a
+                        number of important decisions for the industry. Many of them form the practice of applying the law of
+                        the sea in
                         Ukraine.
                     </p>
                 </div>
-                <div class="block">
-                    <div class="wrap-for-services-img">
-                        <img src="./images/servicesImg/Group.svg" alt="">
-                    </div>
-                    <h3 class="h3-regular">
-                        Structuring corporate relationships
-                    </h3>
-                    <p class="paragraph-regular">
-                        Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily
-                        life of
-                        your company.
-                    </p>
+            </div>
+        </section>
+        <section class="services">
+            <div class="wrapper">
+                <div>
+                    <a class="link-services" href="#">
+                        <h3 class="link-services--h3-caps">
+                            Services
+                        </h3>
+                    </a>
+                    <h1 class="hero">
+                        What can we do better than others?
+                    </h1>
                 </div>
-                <div class="block">
-                    <div class="wrap-for-services-img">
-                        <img src="./images/servicesImg/Trust.svg" alt="">
+                <div class="blocks">
+                    <div class="block">
+                        <div class="wrap-for-services-img">
+                            <img src="./images/servicesImg/Ecommerce.svg" alt="">
+                        </div>
+                        <h3 class="h3-regular">
+                            IT and e-commerce
+                        </h3>
+                        <p class="paragraph-regular">
+                            An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts
+                            you from
+                            doing
+                            business. But there is not much work to do to hire an in-house lawyer.
+                        </p>
                     </div>
-                    <h3 class="h3-regular">
-                        Building contractual relations
-                    </h3>
-                    <p class="paragraph-regular">
-                        Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at
-                        the
-                        coffee maker and just talk about current affairs instead of waiting for update status.
-                    </p>
-                </div>
-                <div class="block">
-                    <div class="wrap-for-services-img">
-                        <img src="./images/servicesImg/Protection.svg" alt="">
+                    <div class="block">
+                        <div class="wrap-for-services-img">
+                            <img src="./images/servicesImg/Support.svg" alt="">
+                        </div>
+                        <h3 class="h3-regular">
+                            Comprehensive daily
+                            legal support
+                        </h3>
+                        <p class="paragraph-regular">
+                            In addition, over time, the work will become the same type and uninteresting for a full-time lawyer.
+                            And we know
+                            very
+                            well how difficult it is to find a good candidate with experience in the field of information
+                            technology in
+                            Ukraine.
+                        </p>
                     </div>
-                    <h3 class="h3-regular">
-                        Protection of business, intellectual property
-                    </h3>
-                    <p class="paragraph-regular">
-                        And all the other time he will work on new diverse projects, so he will definitely not stop in professional
-                        development.
-                        One way or another, all Axon Partners will work for you instead of a corporate lawyer.
-                    </p>
-                </div>
-                <div class="block">
-                    <div class="wrap-for-services-img">
-                        <img src="./images/servicesImg/Layer.svg" alt="">
+                    <div class="block">
+                        <div class="wrap-for-services-img">
+                            <img src="./images/servicesImg/Group.svg" alt="">
+                        </div>
+                        <h3 class="h3-regular">
+                            Structuring corporate relationships
+                        </h3>
+                        <p class="paragraph-regular">
+                            Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into
+                            the daily
+                            life of
+                            your company.
+                        </p>
                     </div>
-                    <h3 class="h3-regular">
-                        Judicial representation
-                    </h3>
-                    <p class="paragraph-regular">
-                        Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have
-                        your own
-                        legal department or not?
-                    </p>
+                    <div class="block">
+                        <div class="wrap-for-services-img">
+                            <img src="./images/servicesImg/Trust.svg" alt="">
+                        </div>
+                        <h3 class="h3-regular">
+                            Building contractual relations
+                        </h3>
+                        <p class="paragraph-regular">
+                            Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can
+                            catch it at
+                            the
+                            coffee maker and just talk about current affairs instead of waiting for update status.
+                        </p>
+                    </div>
+                    <div class="block">
+                        <div class="wrap-for-services-img">
+                            <img src="./images/servicesImg/Protection.svg" alt="">
+                        </div>
+                        <h3 class="h3-regular">
+                            Protection of business, intellectual property
+                        </h3>
+                        <p class="paragraph-regular">
+                            And all the other time he will work on new diverse projects, so he will definitely not stop in
+                            professional
+                            development.
+                            One way or another, all Axon Partners will work for you instead of a corporate lawyer.
+                        </p>
+                    </div>
+                    <div class="block">
+                        <div class="wrap-for-services-img">
+                            <img src="./images/servicesImg/Layer.svg" alt="">
+                        </div>
+                        <h3 class="h3-regular">
+                            Judicial representation
+                        </h3>
+                        <p class="paragraph-regular">
+                            Is it a small, medium-sized company or a market leader? Local business or multinational company? Do
+                            you have
+                            your own
+                            legal department or not?
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <section class="spacer">     
     </section>
     <section class="team-slider">

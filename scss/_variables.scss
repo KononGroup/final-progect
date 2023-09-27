@@ -1,4 +1,4 @@
-$main-regular: #323264;
+$main-regular: rgb(50, 50, 100);
 $main-alt: #46466E;
 $main-soft: #686887;
 $accent:#F0145A;
@@ -6,4 +6,6 @@ $active-regular: #24A3FF;
 $active-hover:#0085FF;
 $active-active:#006CCF;
 $gradient-red-text: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
-$gradient-supersoft: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%)
+$gradient-supersoft: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$gradient-regular:  linear-gradient(129deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+$gradient-text-red-reverse:  linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%);

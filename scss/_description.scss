@@ -1,0 +1,55 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+@use 'functions' as func;
+
+.description {
+    &__wrapper {
+        padding: 30px;
+    }
+
+    &__nav {
+        display: flex;
+        overflow: auto;
+        gap: 30px;
+
+        &--button {
+            @include mix.hero-regular;
+            border: none;
+            padding: 0;
+            white-space: nowrap;
+            background-color: inherit;
+            cursor: pointer;
+            font-family: montserrat, sans-serif;
+        }
+
+        &--button-active {
+            background: var(--gradient-text-red-reversed, linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        &--button:hover {
+            color: var.$accent;
+        }
+    }
+
+    &__content {
+        &--title {
+            @include mix.h2;
+            margin-bottom: 30px;
+        }
+
+        &--text {
+            @include mix.introduction;
+        }
+    }
+
+    &__hr {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background: rgba(255, 255, 255, 0.30);
+        height: 4px;
+        border: none;
+    }
+}
