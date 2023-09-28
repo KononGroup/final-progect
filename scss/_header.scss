@@ -3,14 +3,7 @@
 @use 'functions' as func;
 
 .header {
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
-
     &__container-color {
-        z-index: -1;
         top: 0;
         left: 0;
         right: 0;
@@ -119,6 +112,18 @@
         }
     }
     
+}
+
+.header-main {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &__container-color {
+        z-index: -1;
+    }
 }
 
 .mobile-navigation-close {

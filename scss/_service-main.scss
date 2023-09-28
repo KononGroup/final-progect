@@ -1,0 +1,116 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+@use 'functions' as func;
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+    padding-bottom: 60px;
+
+
+    &__hero {
+        @include mix.hero;
+    }
+
+    &__hr {
+        height: 4px;
+        background-color: rgba(255, 255, 255, 0.50);
+        border: none;
+        margin: 0;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+
+        &--img {
+            border-radius: 24px;
+            background-color: #FFF;
+            padding: 14px;
+        }
+
+        &--text {
+            @include mix.introduction;
+            text-align: center;
+        }
+    }
+
+    &__second {
+        display: grid;
+        gap: 30px;
+
+        &--title {
+            color: #FFF;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        // &--list {
+        //     list-style-type: disc;
+        //     list-style-position: inside;
+            
+        // }
+
+        // &--list-item::marker {
+        //     color: var.$accent;
+        //     margin-right: 8px;
+        //     font-size: larger;
+        // }
+
+        &--list-item {
+            color: #FFF;
+            font-size: 18px;
+            line-height: 26px;
+            position: relative;
+            display: inline-flex;
+            margin-left: 14px;
+        }
+
+        &--list-item::before {
+            display: inline-flex;
+            content: ' ';
+            background-color: var.$accent;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 8px;position: absolute;
+            top: 12px;
+            left: -14px;
+        }
+
+        &--list-item:not(:nth-child(4)) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.service::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #CACADB;
+    height: 10px;
+}
+
+.service::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: #E7E7F2;
+    height: 10px;
+}
