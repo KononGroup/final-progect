@@ -1,0 +1,99 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+@use 'functions' as func;
+
+.contact {
+    &__info{
+        display: grid;
+        padding-bottom: 30px;
+        gap: 30px;
+        &--tel {
+            color: var.$main-alt;
+            font-size: 21px;
+            line-height: 30px;
+        }
+
+        &--email {
+            color:var.$active-regular;
+            font-size: 21px;
+            line-height: 30px;
+        }
+    }
+
+    &__hr {
+        background-color: #E6E6F0;
+        height: 4px;
+        width: 100%;
+        border: none;
+    }
+
+    &--link-fb {
+        display: flex;
+    }
+
+    &--link-fb:hover path {
+        fill: var.$accent;
+        color: var.$accent;
+    }
+
+    &--text-link:hover {
+        color: var.$accent;
+    }
+
+    &--text-link {
+        color: var.$active-regular;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &--svg-fb {
+        margin-right: 10px;
+    }
+
+
+}
+
+
+.form {
+    border-radius: 12px;
+    background-color: #F5F5FA;
+    grid-column: 2/3;
+
+    &__wrap {
+        display: grid;
+        gap: 15px;
+    }
+
+    &__form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    }
+    
+    &__title{ 
+        @include mix.hero;
+    }
+
+    &--input {
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid  #FFF;
+        background-color: #FFF;
+        color:  #B3B3BA;
+        line-height: 26px;
+        width: calc(100% - 30px);
+        font-family: montserrat, sans-serif;
+    }
+
+    &__legend {
+        @include mix.h3-caps;
+        color: #B3B3BA;
+    }
+  
+}

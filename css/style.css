@@ -632,7 +632,7 @@ body {
   width: 32px;
   height: 32px;
   border: none;
-  background-color: rgb(50, 50, 100);
+  background-color: inherit;
   padding: 0;
 }
 .header__fb-svg:hover path {
@@ -716,6 +716,50 @@ body {
   background-color: #E6E6F0;
 }
 
+.header-white__nav--link:not(:last-child) {
+  margin-right: 15px;
+}
+.header-white__nav--link {
+  color: #24A3FF;
+  text-align: right;
+  font-style: normal;
+  font-weight: 700;
+}
+.header-white__nav--link__active {
+  color: #F0145A;
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+}
+.header-white__nav--link:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.header-white__container-color {
+  background: #F5F5FA;
+  z-index: -1;
+}
+.header-white__top-of-head--tel {
+  color: #B3B3BA;
+}
+.header-white__middle--services {
+  color: rgb(50, 50, 100);
+}
+.header-white__links-lng--item:not(:last-child) {
+  color: #B3B3BA;
+}
+.header-white__links-lng--item:hover {
+  border-radius: 8px;
+  background-color: #F0145A;
+  color: white;
+}
+.header-white__links-lng--item-active:hover {
+  background-color: white;
+  color: #B3B3BA;
+}
+.header-white__fb-svg:hover path {
+  fill: #F0145A;
+}
+
 .wrapper {
   max-width: 100%;
   padding-left: 30px;
@@ -748,6 +792,10 @@ body {
     font-size: 30px;
   }
   .service__main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .contact {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -904,6 +952,10 @@ body {
   .service__hr {
     grid-column: 1/3;
   }
+  .contact {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
 @media (min-width: 1024px) {
   .block {
@@ -990,10 +1042,23 @@ body {
     padding-left: 160px;
     padding-right: 160px;
   }
+  .contact__wrapper {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
 }
 @media (min-width: 1024px) {
   .logos a {
     width: 25%;
+  }
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1/2;
+    gap: 60px;
+  }
+  .contact__info {
+    align-self: baseline;
   }
 }
 @media (min-width: 1920px) {
@@ -1027,6 +1092,10 @@ body {
     margin-right: auto;
   }
   .service__wrapper {
+    padding-left: 280px;
+    padding-right: 280px;
+  }
+  .contact__wrapper {
     padding-left: 280px;
     padding-right: 280px;
   }
@@ -1252,6 +1321,98 @@ body {
 
 .button:active {
   background-color: #006CCF;
+}
+
+.contact__info {
+  display: grid;
+  padding-bottom: 30px;
+  gap: 30px;
+}
+.contact__info--tel {
+  color: #46466E;
+  font-size: 21px;
+  line-height: 30px;
+}
+.contact__info--email {
+  color: #24A3FF;
+  font-size: 21px;
+  line-height: 30px;
+}
+.contact__hr {
+  background-color: #E6E6F0;
+  height: 4px;
+  width: 100%;
+  border: none;
+}
+.contact--link-fb {
+  display: flex;
+}
+.contact--link-fb:hover path {
+  fill: #F0145A;
+  color: #F0145A;
+}
+.contact--text-link:hover {
+  color: #F0145A;
+}
+.contact--text-link {
+  color: #24A3FF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-end;
+}
+.contact--svg-fb {
+  margin-right: 10px;
+}
+
+.form {
+  border-radius: 12px;
+  background-color: #F5F5FA;
+  grid-column: 2/3;
+}
+.form__wrap {
+  display: grid;
+  gap: 15px;
+}
+.form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+.form__title {
+  font-size: 38px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  .form__title {
+    font-size: 30px;
+  }
+}
+.form--input {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #FFF;
+  background-color: #FFF;
+  color: #B3B3BA;
+  line-height: 26px;
+  width: calc(100% - 30px);
+  font-family: montserrat, sans-serif;
+}
+.form__legend {
+  color: #24A3FF;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
 }
 
 /*# sourceMappingURL=style.css.map */

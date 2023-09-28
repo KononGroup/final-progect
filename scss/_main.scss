@@ -58,6 +58,11 @@
             padding-bottom: 30px;
         }
     }
+    .contact{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+               
 }
 
 @media( min-width: 768px ) {
@@ -261,6 +266,11 @@
 
 
     }
+
+    .contact {
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -373,12 +383,30 @@
             padding-right: 160px;
         }
     }
+
+    .contact{
+        &__wrapper {
+            padding-left: 180px;
+            padding-right: 180px;
+        }
+    }
 }
 
 @media (min-width: 1024px) {
     .logos {
         a {
             width: 25%;
+        }
+    }
+
+    .contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: 1/2;
+        gap: 60px;
+
+        &__info {
+            align-self: baseline;
         }
     }
 }
@@ -424,6 +452,13 @@
     }
 
     .service {
+        &__wrapper {
+            padding-left: 280px;
+            padding-right: 280px;
+        }
+    }
+
+    .contact {
         &__wrapper {
             padding-left: 280px;
             padding-right: 280px;

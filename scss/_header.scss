@@ -91,7 +91,7 @@
         width: 32px;
         height: 32px;
         border: none;
-        background-color: var.$main-regular;
+        background-color: inherit;
         padding: 0;
         
     }
@@ -192,4 +192,70 @@
     }
 }
 
+.header-white {
 
+    &__nav {
+        &--link:not(:last-child) {
+                margin-right: 15px;
+            }
+        &--link {
+            color: var.$active-regular;
+            text-align: right;
+            font-style: normal;
+            font-weight: 700;
+            &__active {
+                color: var.$accent;
+                text-decoration-line: underline;
+                text-underline-offset: 3px;
+                }
+        }
+
+        &--link:hover {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+    }
+    &__container-color {
+        background: #F5F5FA;
+        z-index: -1;
+    }
+    &__top-of-head {
+        
+        &--tel {
+            color: #B3B3BA;
+        }
+        
+    }
+
+    &__middle {
+        &--services {
+            color: var.$main-regular;
+        }
+    }
+
+    &__links-lng {
+        &--item:not(:last-child) {
+            color: #B3B3BA;
+        }
+    }
+
+        
+    &__links-lng{
+        &--item:hover {
+            border-radius: 8px;
+            background-color: #F0145A;
+            color: white;
+        }
+
+        &--item-active:hover {
+            background-color: white;
+            color: #B3B3BA
+    }
+    }
+   
+
+    &__fb-svg:hover path {
+        fill: var.$accent;
+    }
+
+}

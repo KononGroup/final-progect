@@ -6,12 +6,12 @@
 .button {
     @include mix.button;
     min-width: 208px;
-    
 }
 
 .button:hover {
     background: var.$active-hover;
     box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.50);
+
 }
 
 .button:active {
