@@ -28,6 +28,10 @@
         margin-bottom: 15px;
     }
 
+    &__cards--title:hover {
+        color: var.$accent;
+    }
+
     &__cards--date {
         margin-bottom: 15px;
         color:  #B3B3BA;
@@ -45,5 +49,19 @@
         border: none;
     }
 
-   
+    &__btn {
+        width: 211px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        
+    }
+}
+
+.wrap-btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }

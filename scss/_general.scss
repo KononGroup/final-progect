@@ -1,3 +1,6 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+
 body {
     font-family: montserrat, sans-serif;
 }
@@ -5,4 +8,81 @@ body {
 
 .mobile-hidden {
     display: none;
+}
+
+.switcher {
+    display: flex;
+    width: 233px;
+    height: 42px;
+    background-color: #E6E6F0;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transition-duration: .3;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.switcher:hover::after {
+    border-radius: 12px;
+    background-color: #F5F5FA;
+}
+
+.switcher::before {
+    position: absolute;
+    display: inline-flex;
+    top: 2px;
+    left: 2px;
+    content: 'news';
+    width: 105px;
+    height: 38px;
+    background-color: white;
+    padding: 8px 30px 10px 30px;
+    border-radius: 12px;
+    color: var.$main-regular;
+    text-align: center;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.switcher::after {
+    position: absolute;
+    display: inline-flex;
+    top: 2px;
+    left: 109px;
+    content: 'articles';
+    width: 122px;
+    height: 38px;
+    padding: 8px 30px 10px 30px;
+    color: var.$main-regular;
+    text-align: center;
+    font-weight: 700;
+    box-sizing: border-box;
+
+}
+
+input:checked + .switcher::after {
+    background-color: white;
+    border-radius: 12px;
+}
+
+input:checked + .switcher:hover::before {
+    background-color: #F5F5FA;
+    border-radius: 12px;
+}
+
+input:checked + .switcher::before {
+    background-color: #E6E6F0;;
+
+}
+
+input#switcher {
+    display: none;
+
+}
+
+.wrapper-switcher {
+    display: flex;
+    justify-content: center;
+    transition-duration: .3;
 }

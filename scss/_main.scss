@@ -62,6 +62,10 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
+    .spacer_publications {
+        display: none;
+    }
                
 }
 
@@ -173,7 +177,7 @@
                 overflow: hidden;
             }
 
-            &--item:nth-child(3) {
+            &--item-grid {
                 grid-column: 1 / 3;
             }
         }
@@ -222,11 +226,6 @@
 
         &__nav {
 
-            &--link {
-                color: #FFF;
-                font-weight: 700;
-            }
-
             &--link:not(:last-child) {
                 margin-right: 15px;
             }
@@ -270,6 +269,11 @@
     .contact {
         padding-bottom: 60px;
         padding-top: 60px;
+    }
+
+    .spacer_publications {
+        display: block;
+        height: 60px;
     }
 }
 

@@ -107,8 +107,15 @@
             text-underline-offset: 3px;
         }
 
-        &--link:active {
-            color: var.$accent;
+        &--link {
+            color: white;
+            font-weight: 700;
+            &__active{
+                color: #F0145A;
+                text-decoration: underline;
+                text-underline-offset: 3px;
+            }
+            
         }
     }
     

@@ -81,19 +81,38 @@
     }
 
     &--input {
+        border: 1px solid #FFF;
         padding: 15px;
         border-radius: 8px;
-        border: 1px solid  #FFF;
         background-color: #FFF;
-        color:  #B3B3BA;
         line-height: 26px;
         width: calc(100% - 30px);
         font-family: montserrat, sans-serif;
+        outline: none;
+    }
+
+
+    &--input:focus {
+        
+    }
+
+
+    &--input:invalid {
+        border-color: #F00;
     }
 
     &__legend {
         @include mix.h3-caps;
         color: #B3B3BA;
     }
+
+    &--text-area {
+        resize: none;
+    }
   
+}
+ 
+
+.form--input:focus {
+    border: 1px solid var.$active-regular;
 }
