@@ -299,12 +299,28 @@
             </button>
             <a class="mobile-navigation__container--link mobile-navigation__container--link-current-page" href="">about
                 us</a>
-            <a class="mobile-navigation__container--link" href="">послуги</a>
-            <a class="mobile-navigation__container--link" href="">контаки</a>
-            <a class="mobile-navigation__container--link" href="">публікації</a>
+            <a class="mobile-navigation__container--link" href="service.html">послуги</a>
+            <a class="mobile-navigation__container--link" href="contact.html">контаки</a>
+            <a class="mobile-navigation__container--link" href="publications.html">публікації</a>
             <a class="mobile-navigation__container--link" href="">команда</a>
         </nav>
     </div>
+    
+    
+    <script>
+        let burgMenu = document.querySelector('.header__button--nav');
+        let burgMenuClose = document.querySelector('.mobile-navigation__container--button');
+        let mobNavClose = document.querySelector('.mobile-navigation');
+
+        burgMenu.addEventListener('click', () => {
+            mobNavClose.classList.remove('mobile-navigation-close')
+        });
+
+        burgMenuClose.addEventListener('click', () => {
+            mobNavClose.classList.add('mobile-navigation-close')
+        })
+
+    </script>
 </body>
 
 </html>
