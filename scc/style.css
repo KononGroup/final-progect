@@ -328,30 +328,11 @@ input#switcher {
   line-height: 22px;
 }
 
-.services {
-  position: relative;
-  border-radius: 0 0 12px 12px;
-  padding-bottom: 60px;
-  padding-top: 30px;
-}
 .services__blocks {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 30px;
   margin-top: 30px;
-}
-.services__h2 {
-  font-size: 38px;
-  font-weight: 700;
-  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@media (max-width: 768px) {
-  .services__h2 {
-    font-size: 30px;
-  }
+  padding-bottom: 60px;
 }
 
 .services::after {
@@ -1058,14 +1039,6 @@ input#switcher {
     display: block;
     height: 60px;
   }
-  .services {
-    padding-top: 60px;
-  }
-  .services__blocks {
-    margin-top: 60px;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-  }
 }
 @media (min-width: 1024px) {
   .block {
@@ -1139,9 +1112,6 @@ input#switcher {
     left: 0;
     bottom: 0;
     margin: 0;
-  }
-  .services__blocks {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1440px) {

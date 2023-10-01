@@ -3,8 +3,19 @@
 
 .services {
     position: relative;
-    // background: var.$gradient-supersoft;
-    border-radius: 0px 0px 12px 12px;
+    border-radius: 0 0 12px 12px;
+    padding-bottom: 60px;
+    padding-top: 30px;
+    &__blocks {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    &__h2 {
+        @include mix.hero;
+    }
 }
 
 .services::after {
@@ -70,12 +81,5 @@
     }
 }
 
-.blocks {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 
-.block {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+

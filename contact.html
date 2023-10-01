@@ -59,7 +59,7 @@
                 </button>
                 <nav class="header__nav header-white__nav mobile-hidden">
                     <a class="header-white__nav--link" href="">about us</a>
-                    <a class="header-white__nav--link" href="service-entry.html">services</a>
+                    <a class="header-white__nav--link" href="service.html">services</a>
                     <a class="header-white__nav--link" href="">team</a>
                     <a class="header-white__nav--link" href="publications.html">publications</a>
                     <a class="header-white__nav--link header-white__nav--link__active" href="#">contact</a>
@@ -152,5 +152,36 @@
             </div>
         </div>
     </footer>
+    <div class="mobile-navigation mobile-navigation-close">
+        <nav class="mobile-navigation__container">
+            <button class="mobile-navigation__container--button" type="button">
+                <svg class="mobile-navigation__container--svg" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                    <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                </svg>
+            </button>
+            <a class="mobile-navigation__container--link mobile-navigation__container--link-current-page" href="">about
+                us</a>
+            <a class="mobile-navigation__container--link" href="service.html">послуги</a>
+            <a class="mobile-navigation__container--link" href="contact.html">контаки</a>
+            <a class="mobile-navigation__container--link" href="publications.html">публікації</a>
+            <a class="mobile-navigation__container--link" href="">команда</a>
+        </nav>
+    </div>
+    <script>
+        let burgMenu = document.querySelector('.header__button--nav');
+        let burgMenuClose = document.querySelector('.mobile-navigation__container--button');
+        let mobNavClose = document.querySelector('.mobile-navigation');
+
+        burgMenu.addEventListener('click', () => {
+            mobNavClose.classList.remove('mobile-navigation-close')
+        });
+
+        burgMenuClose.addEventListener('click', () => {
+            mobNavClose.classList.add('mobile-navigation-close')
+        })
+
+    </script>
 </body>
 </html>

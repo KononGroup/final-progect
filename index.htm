@@ -55,7 +55,7 @@
                     </button>
                     <nav class="header__nav mobile-hidden">
                         <a class="header__nav--link" href="">about us</a>
-                        <a class="header__nav--link" href="service-entry.html">services</a>
+                        <a class="header__nav--link" href="service.html">services</a>
                         <a class="header__nav--link" href="">team</a>
                         <a class="header__nav--link" href="publications.html">publications</a>
                         <a class="header__nav--link" href="contact.html">contact</a>
@@ -127,11 +127,13 @@
                         What can we do better than others?
                     </h1>
                 </div>
-                <div class="blocks">
-                    <div class="block">
-                        <div class="wrap-for-services-img">
-                            <img src="./images/servicesImg/Ecommerce.svg" alt="">
-                        </div>
+                <div class="services__blocks">
+                    <div class="services__blocks--item">
+                        <a href="service-entry.html">
+                            <div class="wrap-for-services-img">
+                                <img src="./images/servicesImg/Ecommerce.svg" alt="">
+                            </div>
+                        </a>
                         <h3 class="h3-regular">
                             IT and e-commerce
                         </h3>
@@ -142,7 +144,7 @@
                             business. But there is not much work to do to hire an in-house lawyer.
                         </p>
                     </div>
-                    <div class="block">
+                    <div class="services__blocks--item">
                         <div class="wrap-for-services-img">
                             <img src="./images/servicesImg/Support.svg" alt="">
                         </div>
@@ -159,7 +161,7 @@
                             Ukraine.
                         </p>
                     </div>
-                    <div class="block">
+                    <div class="services__blocks--item">
                         <div class="wrap-for-services-img">
                             <img src="./images/servicesImg/Group.svg" alt="">
                         </div>
@@ -173,7 +175,7 @@
                             your company.
                         </p>
                     </div>
-                    <div class="block">
+                    <div class="services__blocks--item">
                         <div class="wrap-for-services-img">
                             <img src="./images/servicesImg/Trust.svg" alt="">
                         </div>
@@ -187,7 +189,7 @@
                             coffee maker and just talk about current affairs instead of waiting for update status.
                         </p>
                     </div>
-                    <div class="block">
+                    <div class="services__blocks--item">
                         <div class="wrap-for-services-img">
                             <img src="./images/servicesImg/Protection.svg" alt="">
                         </div>
@@ -201,7 +203,7 @@
                             One way or another, all Axon Partners will work for you instead of a corporate lawyer.
                         </p>
                     </div>
-                    <div class="block">
+                    <div class="services__blocks--item">
                         <div class="wrap-for-services-img">
                             <img src="./images/servicesImg/Layer.svg" alt="">
                         </div>
@@ -436,11 +438,27 @@
                 </svg>
             </button>
             <a class="mobile-navigation__container--link mobile-navigation__container--link-current-page" href="">about us</a>
-            <a class="mobile-navigation__container--link" href="">послуги</a>
-            <a class="mobile-navigation__container--link" href="">контаки</a>
-            <a class="mobile-navigation__container--link" href="">публікації</a>
+            <a class="mobile-navigation__container--link" href="service.html">послуги</a>
+            <a class="mobile-navigation__container--link" href="contact.html">контаки</a>
+            <a class="mobile-navigation__container--link" href="publications.html">публікації</a>
             <a class="mobile-navigation__container--link" href="">команда</a>           
         </nav>
     </div>
+
+
+    <script>
+        let  burgMenu =  document.querySelector('.header__button--nav');
+        let burgMenuClose = document.querySelector('.mobile-navigation__container--button');
+        let mobNavClose = document.querySelector('.mobile-navigation');
+
+        burgMenu.addEventListener('click', () => {
+            mobNavClose.classList.remove('mobile-navigation-close')
+        });
+
+        burgMenuClose.addEventListener('click', () => {
+                mobNavClose.classList.add('mobile-navigation-close')
+            })
+        
+    </script>
 </body>
 </html>
